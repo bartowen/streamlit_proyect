@@ -1,8 +1,9 @@
 from pickle import load
 import streamlit as st
 
-model = load(open('../models/decision_tree_regressor_42_pca.sav', 'rb'))
-pca = load(open('../models/pca_42.sav', 'rb'))
+model = load(open('C:/Users/felip/repos/streamlit_proyect/streamlit_proyect/models/decision_tree_regressor_42_pca.sav', 'rb'))
+pca = load(open('C:/Users/felip/repos/streamlit_proyect/streamlit_proyect/models/pca_4.sav', 'rb'))
+
 
 st.title('Predicción de notas en el examen')
 
@@ -21,3 +22,6 @@ asistencia = st.slider('Asistencia', min_value= 60, max_value= 100, step=1)
 sueño = st.slider('Horas de sueño', min_value= 4, max_value= 10, step=1)
 notas_previas = st.slider('Notas previas', min_value= 50, max_value= 100, step=5)
 tutoria = st.slider('Sesiones de tutoría', min_value= 0, max_value= 8, step=1)
+act_fisica = st.slider('Actividad física', min_value= 0, max_value= 6, step=1)
+act:extracurriculares = st.toggle('Actividades extracurriculares')
+env_parental = st.radio('Involucramiento parental','Bajo', 'Medio', 'Alto', index=[0, 1, 2])
