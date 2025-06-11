@@ -37,4 +37,33 @@ influencia_compañeros = st.radio(
     'Influencia de compañeros',
     ['Positiva', 'Negativa', 'Neutral'],
     index=0)
-Familia_ingreso =
+Family_Income_num = 0
+Gender_num = 0
+Access_to_Resources_num = 0
+Motivation_Level_num = 0
+Distance_from_Home_num = 0
+Teacher_Quality_num = 0
+Internet_Access_num = 0
+Learning_Disabilities_num = 0
+
+env_parental_dict = {
+    'Bajo': 0,
+    'Medio': 1,
+    'Alto': 2
+}
+act_extracurriculares_dict = int(act_extracurriculares)
+tipo_escuela_dict = {
+    'Pública': 0,
+    'Privada': 1
+}
+nivel_educacion_padres_dict = {
+    'Media': 0,
+    'Bachillerato': 1,
+    'Universitario': 2,
+    'Ninguna': -1
+}
+influencia_compañeros_dict = {
+    'Positiva': 0,
+    'Negativa': 1,
+    'Neutral': 2
+}
